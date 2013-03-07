@@ -1,0 +1,14 @@
+<input type="search" name="search_location" id="search" value="" placeholder="Search for a Parking Lot">
+
+<div id="map_canvas" style="width:300px;height:300px;"></div>
+
+<ul data-role="listview" id="lots_list">
+    <li><a href="#">South Campus Hall</a></li>
+    <li><a href="#">Student Life Centre</a></li>
+    <li><a href="#">UW Plaza</a></li>
+</ul>
+<div data-role="footer" class="ui-bar">
+    <%= link_to "Find", {:controller => "lots", :action => "map"}, "data-role" => "button", "data-icon" => "search" %>
+    <%= link_to "Pay", {:controller => "users", :action => "pay"}, "data-role" => "button", "data-icon" => "home" %>
+    <%= link_to "Account", {:controller => "users", :action => "account"}, "data-role" => "button", "data-icon" => "gear" %>
+</div>

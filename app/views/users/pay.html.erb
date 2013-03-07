@@ -1,0 +1,17 @@
+<div data-role="header">
+	<h1>Vehicle Name</h1>
+	<a href="#" data-icon="gear" class="ui-btn-right">Vehicle</a>
+</div>
+
+<div id="qrcode"><img src="http://placehold.it/150x150"></div>
+
+<ul data-role="listview" id="reservation_list">
+	<li><a href="#">South Campus Hall [March 14th, 9:00 AM]</a></li>
+    <li><a href="#">Student Life Centre [March 21st, 12:30 PM]</a></li>
+    <li><a href="#">UW Plaza [March 30th, 5:30 PM]</a></li>
+</ul>
+<div data-role="footer" class="ui-bar">
+    <%= link_to "Find", {:controller => "lots", :action => "map"}, "data-role" => "button", "data-icon" => "search" %>
+    <%= link_to "Pay", {:controller => "users", :action => "pay"}, "data-role" => "button", "data-icon" => "home" %>
+    <%= link_to "Account", {:controller => "users", :action => "account"}, "data-role" => "button", "data-icon" => "gear" %>
+</div>

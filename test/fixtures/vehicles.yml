@@ -2,10 +2,10 @@
 
 one:
   name: MyString
-  email: MyString
-  license: MyString
+  type: 
+  plate: MyString
 
 two:
   name: MyString
-  email: MyString
-  license: MyString
+  type: 
+  plate: MyString

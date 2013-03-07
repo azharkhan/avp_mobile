@@ -11,14 +11,39 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130211052611) do
+ActiveRecord::Schema.define(:version => 20130221024445) do
+
+  create_table "lots", :force => true do |t|
+    t.string   "name"
+    t.string   "address"
+    t.integer  "capacity"
+    t.decimal  "price"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "reservations", :force => true do |t|
+    t.datetime "timestamp"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+    t.integer  "user_id"
+  end
 
   create_table "users", :force => true do |t|
-    t.string   "username"
-    t.integer  "v_no"
-    t.integer  "reservations"
-    t.datetime "created_at",   :null => false
-    t.datetime "updated_at",   :null => false
+    t.string   "name"
+    t.string   "email"
+    t.string   "license"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "vehicles", :force => true do |t|
+    t.string   "name"
+    t.string   "make"
+    t.string   "plate"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+    t.integer  "user_id"
   end
 
 end

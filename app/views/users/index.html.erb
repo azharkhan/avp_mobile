@@ -1,14 +1,27 @@
-<div data-role="header">
-  <h1>Listing users</h1>
-</div>
+<h1>Listing users</h1>
 
-<div data-role="content">
-  <ul data-role="listview">
-    <% @users.each do |user| %>
-    <li>
-      <%= link_to user.username, user %>
-    </li>
-    <% end %>
-  </ul>
-</div>
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Email</th>
+    <th>License</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
 
+<% @users.each do |user| %>
+  <tr>
+    <td><%= user.name %></td>
+    <td><%= user.email %></td>
+    <td><%= user.license %></td>
+    <td><%= link_to 'Show', user %></td>
+    <td><%= link_to 'Edit', edit_user_path(user) %></td>
+    <td><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New User', new_user_path %>

@@ -2,15 +2,15 @@
 <html>
 <head>
   <title>AVP-Mobile</title>
-  <!--%= stylesheet_link_tag "jquery.mobile" %-->
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
-  <!--%= javascript_include_tag "jquery.mobile" %-->
+  <%= javascript_include_tag "http://maps.googleapis.com/maps/api/js?sensor=true" %>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <%= csrf_meta_tags %>
 </head>
+
 <body>
-  <div data-role="page" data-theme="a">
+  <div data-role="page" data-theme="c">
     <%= yield %>
   </div>
 </body>

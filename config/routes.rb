@@ -1,5 +1,15 @@
 AvpMobile::Application.routes.draw do
+  resources :reservations
+
+  resources :lots
+
+  resources :vehicles
+
   resources :users
+
+  match 'find' => 'lots#map'
+  match 'pay' => 'users#pay'
+  match 'account' => 'users#account'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

@@ -22,6 +22,7 @@ end
 
 gem 'jquery-rails'
 gem 'jquery_mobile_rails'
+gem 'awesome_print', :require => 'ap'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

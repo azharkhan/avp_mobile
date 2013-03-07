@@ -2,10 +2,12 @@
 
 one:
   name: MyString
-  email: MyString
-  license: MyString
+  address: MyString
+  capacity: 1
+  price: 9.99
 
 two:
   name: MyString
-  email: MyString
-  license: MyString
+  address: MyString
+  capacity: 1
+  price: 9.99
