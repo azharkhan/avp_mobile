@@ -88,4 +88,8 @@ class UsersController < ApplicationController
   def account
 
   end
+
+  def control
+
+  end
 end

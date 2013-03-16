@@ -1,0 +1,10 @@
+<div data-role="header">
+	<a href="#" data-icon="back" data-rel="back" class="ui-btn-left">Back</a>
+    <h1>Park Vehicle</h1>
+    <%= link_to 'Manual', {:controller => "lots", :action => "manual"}, "class" => "ui-btn-right", "data-icon" => "gear" %>
+</div>
+
+<%= form_tag "http://192.168.0.23/p/", {:method => :get} do %>
+	<%= select_tag "bay_number", options_for_select(1..4) %>
+	<%= submit_tag "Park My Ride", "data-theme" => "e" %>
+	<% end %>

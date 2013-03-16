@@ -84,4 +84,16 @@ class LotsController < ApplicationController
   def map
 
   end
+
+  def park
+
+  end
+
+  def retrieve
+
+  end
+
+  def manual
+
+  end
 end

@@ -10,6 +10,10 @@ AvpMobile::Application.routes.draw do
   match 'find' => 'lots#map'
   match 'pay' => 'users#pay'
   match 'account' => 'users#account'
+  match 'control' => 'users#control'
+  match 'park' => 'lots#park'
+  match 'retrieve' => 'lots#retrieve'
+  match 'manual' => 'lots#manual'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

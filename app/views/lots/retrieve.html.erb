@@ -1,0 +1,13 @@
+<div data-role="header">
+	<a href="#" data-icon="back" data-rel="back" class="ui-btn-left">Back</a>
+    <h1>Park Vehicle</h1>
+	<%= link_to 'Manual', {:controller => "lots", :action => "manual"}, "class" => "ui-btn-right", "data-icon" => "gear" %>
+</div>
+
+<!-- <input type="text" name="ticket_number" id="ticket_number" placeholder="Enter Ticket Number ... " value="">
+<input type="submit" value="Fetch My Ride" data-icon="check" data-iconpos="right" data-theme="e"> -->
+
+<%= form_tag "http://192.168.0.23/r/", {:method => :get} do %>
+	<%= text_field_tag(:ticket_number, "Enter Ticket Number ...") %>
+	<%= submit_tag "Fetch My Ride", "data-theme" => "e" %>
+<% end %>

@@ -1,0 +1,8 @@
+<div data-role="header">
+	<h1>AutoValetPark GUI</h1>
+	<!-- <a href="#" data-icon="gear" class="ui-btn-right">Manual Mode</a> -->
+	<%= link_to 'Manual', {:controller => "lots", :action => "manual"}, "class" => "ui-btn-right", "data-icon" => "gear" %>
+</div>
+
+<%= link_to "Park", {:controller => "lots", :action => "park"}, "data-role"=> "button", 'data-theme' => 'e' %>
+<%= link_to "Retrieve",{:controller => "lots", :action => "retrieve"}, "data-role" => "button", "data-theme" => 'b' %>
