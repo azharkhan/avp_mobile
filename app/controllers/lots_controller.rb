@@ -96,4 +96,8 @@ class LotsController < ApplicationController
   def manual
 
   end
+
+  def parse_response
+    
+  end
 end

@@ -7,6 +7,8 @@ AvpMobile::Application.routes.draw do
 
   resources :users
 
+  root :to => 'users#control'
+  
   match 'find' => 'lots#map'
   match 'pay' => 'users#pay'
   match 'account' => 'users#account'
