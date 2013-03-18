@@ -1,3 +1,4 @@
+var ip = 'http://192.168.137.37/'
 
 $(document).on('click', '#park_button', function () {
 	var bay_number = $('#bay_number').val();
@@ -5,7 +6,7 @@ $(document).on('click', '#park_button', function () {
 		type: 'GET',
 		data: bay_number,
 		dataType: 'jsonp',
-		url: 'http://192.168.0.23/p/'
+		url: ip+'p/'
 	});
 });
 
@@ -15,6 +16,6 @@ $(document).on('click', '#retrieve_button', function () {
 		type: 'GET',
 		data: ticket_number,
 		dataType: 'jsonp',
-		url: 'http://192.168.0.23/r/'
+		url: ip+'r/'
 	});
 });

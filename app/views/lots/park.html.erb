@@ -4,5 +4,7 @@
     <%= link_to 'Manual', {:controller => "lots", :action => "manual"}, "class" => "ui-btn-right", "data-icon" => "gear" %>
 </div>
 
+<div class='control_buttons' data-role='fieldcontain'>
 	<%= select_tag "bay_number", options_for_select(1..4) %>
-        <%= link_to "Park My Ride", '#', "data-theme" => "e", "data-role" => "button", :id => "park_button" %>
+    <%= link_to "Park My Ride", '#', "data-theme" => "e", "data-role" => "button", :id => "park_button" %>
+</div>

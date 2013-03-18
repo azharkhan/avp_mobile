@@ -1,3 +1,31 @@
 // Place all the styles related to the Lots controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.app_page {
+	background: url(images/cream_dust.png) repeat;
+}
+
+@media 
+only screen and (-webkit-min-device-pixel-ratio: 2), 
+only screen and (min-resolution: 192dpi) {
+	.app_page {
+		background-image: url(images/cream_dust_@2x.png) repeat;
+	}
+}
+
+.control_buttons {
+		margin: 10% auto;
+		text-align: center;
+		width: 75%;
+}
+
+#avp_logo {
+	width: 200px;
+	height: 200px;
+	margin: 0 auto;
+	img {
+		width: 100%;
+		text-align: center;
+	}
+}

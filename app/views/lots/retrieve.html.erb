@@ -4,8 +4,11 @@
 	<%= link_to 'Manual', {:controller => "lots", :action => "manual"}, "class" => "ui-btn-right", "data-icon" => "gear" %>
 </div>
 
+<div data-role="fieldset" class='control_buttons'>
 	<%= text_field_tag 'ticket_number', nil, :placeholder => "Enter Ticket Number ..." %>
     <%= link_to 'Fetch My Ride', '#', 'data-theme' => 'e', 'data-role' => 'button', :id => 'retrieve_button' %>
+</div>
+
 <div data-role="fieldset" id="retrieve_result">
 </div>
 <!--% end %-->
