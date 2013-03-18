@@ -8,6 +8,7 @@ $(document).on('click', '#car_park_button', function () {
 		dataType: 'jsonp',
 		url: ip
 	});
+	$('#park_result').html('<h1 style="text-align: center;">Your Car is being Parked, Please Exit the Parking Lot...</h1>');
 });
 
 $(document).on('click', '#car_retrieve_button', function () {
@@ -18,6 +19,7 @@ $(document).on('click', '#car_retrieve_button', function () {
 		dataType: 'jsonp',
 		url: ip
 	});
+	$('#retrieve_result').html('<h1 style="text-align: center;">Your Car is being Fetched, Kindly Wait at the Exit Area...</h1>');
 });
 
 $(document).on('click', '#park_button', function () {
