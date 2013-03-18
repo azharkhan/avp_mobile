@@ -8,6 +8,6 @@
 </div>
 
 <div class="control_buttons">
-	<%= link_to "Park", {:controller => "lots", :action => "park"}, "data-role"=> "button", 'data-theme' => 'e' %>
-	<%= link_to "Retrieve",{:controller => "lots", :action => "retrieve"}, "data-role" => "button", "data-theme" => 'b' %>
+	<%= link_to "Park", {:controller => "lots", :action => "park"}, "data-role"=> "button", 'data-theme' => 'e', :id => "park_button" %>
+	<%= link_to "Retrieve",{:controller => "lots", :action => "retrieve"}, "data-role" => "button", "data-theme" => 'b', :id => "retrieve_button" %>
 </div>
