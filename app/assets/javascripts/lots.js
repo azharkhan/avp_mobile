@@ -23,7 +23,7 @@ $(document).on('click', '#car_retrieve_button', function () {
 $(document).on('click', '#park_button', function () {
 	$.ajax({
 		type: 'GET',
-		data: 'p/'
+		data: 'p',
 		dataType: 'jsonp',
 		url: ip
 	});
@@ -32,7 +32,7 @@ $(document).on('click', '#park_button', function () {
 $(document).on('click', '#retrieve_button', function () {
 	$.ajax({
 		type: 'GET',
-		data: 'r/',
+		data: 'r',
 		dataType: 'jsonp',
 		url: ip
 	});
